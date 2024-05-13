@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background: url("../public/images/backgrod.png");
+  background-size: cover;
+}
 @font-face {
   font-family: "BinggraeII-Bold";
   src: url(../public/font/BinggraeII-Bold.ttf);

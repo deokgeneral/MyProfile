@@ -1,0 +1,23 @@
+.neondown-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 120px;
+    bottom: 30px
+}
+.neondown-container img{
+    opacity: 0;
+    margin: -65px;
+    animation: neon-blink 1s infinite alternate;
+}
+
+@keyframes neon-blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
