@@ -1,0 +1,79 @@
+.succle-container {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.succle-gear-container{
+    position: relative;
+    top: -58%;
+    right: 95%;
+    transform: rotate(318deg);
+}
+
+.succle-gear{
+    width: 300px;
+    margin: -55px;
+    animation: succle-gear-ani 16s linear infinite;
+}
+.succle-gear02{
+    width: 180px;
+    animation: succle-gear-ani02 16s linear infinite;
+}
+.succle-gear03{
+    width: 150px;
+    animation: succle-gear-ani02 10.5s linear infinite;
+}
+.succle-gear04{
+    position: absolute;
+    top: -7%;
+    right: 6%;
+    width: 400px;
+    animation: succle-gear-ani 16s linear infinite;
+}
+
+
+@keyframes succle-ani {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+
+@keyframes succle-gear-ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes succle-gear-ani02 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes succle-gear-ani03 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
