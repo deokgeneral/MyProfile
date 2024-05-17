@@ -1,7 +1,7 @@
 .about-container {
     display: flex;
-    width: 1000px;
-    height: 420px;
+    width: 100%;
+    height: 100%;
     justify-content: space-between;
 }
 
@@ -33,14 +33,9 @@
     margin-left: 50px;
 }
 
-/*이미지 css*/
-.about-img {
-    border-radius: 30px;
-    overflow: hidden;
-}
-
 .about-img img {
     width: 450px;
+    border-radius: 30px;
 }
 
 /*나를소개 css*/
@@ -49,11 +44,12 @@
     overflow-y: auto;
     font-family: 'TTHakgyoansimUndongjangL';
     margin-left: 50px;
+    width: 540px;
 }
 /*인포01*/
 .about-info01{
-    margin-top: 40px;
-    height: 350px;
+    margin-top: 60px;
+    height: 410px;
 }
 .about-info01 p{
     color: white;
@@ -67,7 +63,13 @@
     padding: 0 0 5px;
     font-size: 36px;
     border-bottom: 5px solid yellow;
-    animation: text-flicker 3s linear infinite;
+    text-shadow:
+    0px 0px 0px, 0 0 2px,
+    0 0 0em #66ff66,
+    0 0 1em #66ff66,
+    0 0 0.1em #66ff66,
+    0 0 0px #004400;
+    animation: text-flicker 3s linear;
 }
 .about-info01-span02{
     font-size: 28px;
@@ -81,7 +83,7 @@
 /*인포02*/
 .about-info02{
     color: white;
-    height: 350px;
+    height: 300px;
 }
 .about-info02 h2{
     text-align: center;
@@ -96,14 +98,43 @@
     overflow: hidden;
 }
 .about-info02 a{
-    font-size: 21px;
+    font-size: 20px;
     color: #0066ff;
+    text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
+    animation: text-flicker 2s linear;
+}
+.about-info02-span01{
+    font-size: 28px;
+    text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
+    animation: text-flicker 4s linear;
+}
+.about-info02-span02{
+    font-size: 28px;
+    text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
+    animation: text-flicker 3s linear;
+}
+.about-info02-span03 {
+    font-size: 28px;
+    text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
+    animation: text-flicker 3.5s linear;
+}
+.about-info02-span04 {
+    font-size: 28px;
+    text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
+    animation: text-flicker 4.5s linear;
 }
 /*인포3*/
 .about-info03{
-    height: 300px;
+    height: 320px;
+    color: white;
 }
-
+.about-info03 h2{
+    text-align: center;
+    margin: 70px 0 40px 0;
+}
+.about-info03 p{
+    margin-top: 20px;
+}
 
 /*인포02*/
 .about-info02-title-scorll {
@@ -111,6 +142,17 @@
     color: #ffff00;
     animation: text-flicker-yellow 3s linear infinite;
 }
+.about-info03-title-scorll {
+    transition: color 1.75s ease;
+    text-shadow:
+        0 0 0,
+        0 0 2px, 0 0 1em #ff4444,
+        0 0 0.5em #ff4444,
+        0 0 0.1em #ff4444,
+        0 10px 3px #000;
+    animation: text-flicker-red 1.5s linear;
+}
+
 .about-info02 p.about-info02-p01-scorll{
     position: relative;
     left: 10px;
@@ -162,10 +204,29 @@
     transition: left 1.8s ease;
 }
 
+.about-info03-span {
+    position: relative;
+    
+}
+.about-info03-span.underline::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: inline-block;
+    content: "";
+    border-bottom: 5px solid yellow;
+    animation: drawUnderline 2s forwards;;
+}
 
-
-
-/*미디어쿼리*/
+@keyframes drawUnderline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/*텍스트네온 옐로*/
 @keyframes text-flicker-yellow {
     0% {
         opacity: 0.1;
@@ -224,6 +285,94 @@
 
     100% {
         opacity: .9;
-        text-shadow: 0px 0px 29px rgba(255, 255, 0, 1);
+        text-shadow: 0px 0px 29px rgba(255, 255, 0, 1)
     }
+}
+/*텍스트네온 레드*/
+@keyframes text-flicker-red {
+    0% {
+        opacity: 0.1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    2% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    8% {
+        opacity: 0.1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    9% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    12% {
+        opacity: 0.1;
+        text-shadow: 0px 0px rgba(255, 0, 0, 1);
+    }
+
+    20% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    25% {
+        opacity: 0.3;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    30% {
+        opacity: 1;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    70% {
+        opacity: 0.7;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    72% {
+        opacity: 0.2;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    77% {
+        opacity: .9;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1);
+    }
+
+    100% {
+        opacity: .9;
+        text-shadow: 0px 0px 29px rgba(255, 0, 0, 1)
+    }
+}
+/*네온다운 효과*/
+.neondown-conatainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    justify-content: flex-end;
+}
+
+.neondown-conatainer svg {
+    color: #7af7c4;
+    margin: -8px;
+    animation: neon-blink 0.3s infinite alternate;
+}
+
+.neondown-conatainer svg:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.neondown-conatainer svg:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.neondown-conatainer svg:nth-child(3) {
+    animation-delay: 0.3s;
 }

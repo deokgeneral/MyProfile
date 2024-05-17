@@ -1,0 +1,34 @@
+.skill-title h2{
+    font-size: 36px;
+    color: #20f5a0;
+    font-family: 'April16th-Promise';
+    margin-bottom: 20px;
+}
+.skill-container img{
+    width: 120px;
+    margin: 30px;
+}
+#axios{
+    width: 150px;
+}
+.skill-img-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill-img-box01,
+.skill-img-box02{
+    width: 400px;
+}
+.react-spin{
+    animation: spin 12s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

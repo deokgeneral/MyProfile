@@ -5,7 +5,7 @@
     background: url("../../../public/images/background02.png");
     background-size: cover;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
 }
 /*섹션01 제목*/
@@ -28,14 +28,77 @@
 }
 
 .section01-contanier-title b span {
-    animation: blink linear infinite 2s;
+    animation: title-blink linear infinite 2s;
 }
 
 .section01-contanier-title b span:nth-of-type(2) {
-    animation: blink linear infinite 3s;
+    animation: title-blink linear infinite 3s;
 }
 
-@keyframes blink {
+
+.section01-info {
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(51, 51, 51);
+    border: 2px solid #7af7c4;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow:
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 100px rgba(122, 247, 196, 0.3);
+}
+
+.section01-info h1 {
+    margin-top: 10px;
+}
+
+
+
+/*보더네온효과*/
+@keyframes border-flicker {
+    0% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.4);
+        box-shadow: 0px 0px 100px 20px rgba(122, 247, 196, 0.1);
+    }
+
+    2% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.6);
+        box-shadow: 0px 0px 100px 20px rgba(122, 247, 196, 0.4);
+    }
+
+    4% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.8);
+        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.5);
+    }
+
+    8% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.3);
+        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.2);
+    }
+
+    70% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.24);
+        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.3);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
+        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.6);
+        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.8);
+    }
+}
+
+/*제목텍스트효과*/
+@keyframes title-blink {
     78% {
         color: inherit;
         text-shadow: inherit;
@@ -76,120 +139,7 @@
     }
 }
 
-/*섹션01 인포*/
-.section01-info {
-    background-color: rgb(51, 51, 51);
-    border: 2px solid #20f5a0;
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 20px;
-    animation: border-flicker 2s linear infinite;
-}
-
-.section01-info h1 {
-    margin-top: 10px;
-}
-
-@keyframes text-flicker {
-    0% {
-        opacity: 0.1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    2% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    8% {
-        opacity: 0.1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    9% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    12% {
-        opacity: 0.1;
-        text-shadow: 0px 0px rgba(122, 247, 196, 1);
-    }
-
-    20% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    25% {
-        opacity: 0.3;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    30% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    70% {
-        opacity: 0.7;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    72% {
-        opacity: 0.2;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    77% {
-        opacity: .9;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-
-    100% {
-        opacity: .9;
-        text-shadow: 0px 0px 29px rgba(122, 247, 196, 1);
-    }
-}
-
-@keyframes border-flicker {
-    0% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.4);
-        box-shadow: 0px 0px 100px 20px rgba(122, 247, 196, 0.1);
-    }
-
-    2% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.6);
-        box-shadow: 0px 0px 100px 20px rgba(122, 247, 196, 0.4);
-    }
-
-    4% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.8);
-        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.5);
-    }
-
-    8% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.3);
-        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.2);
-    }
-
-    70% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.24);
-        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.3);
-    }
-
-    100% {
-        -webkit-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.73);
-        -moz-box-shadow: 0px 0px 78px 4px rgba(122, 247, 196, 0.6);
-        box-shadow: 0px 0px 78px 20px rgba(122, 247, 196, 0.8);
-    }
-}
-
+/*텍스트네온효과*/
 @keyframes text-flicker {
     0% {
         opacity: 0.1;

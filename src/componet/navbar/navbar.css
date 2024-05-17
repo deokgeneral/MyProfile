@@ -10,27 +10,32 @@
     justify-content: center;
 }
 .navbar li {
-    width: 200px;
+    width: 254.5px;
     text-align: center;
     padding: 10px 0;
-    border: 5px solid #7af7c4;
-    margin: 0 30px 0 30px;
+    margin: 0 5px 0 5px;
+    border: 2px solid #7af7c4;
     border-bottom: none;
     height: 25px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow:
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 100px rgba(122, 247, 196, 0.3);
     transition: height 0.5s ease;
 }
 .navbar li:hover {
     cursor: pointer;
-    border: 5px solid transparent;
     background: #7af7c4;
     color: black;
     height: 40px;
     box-shadow:
     0 0 5px #7af7c4,
-    0 0 25px #7af7c4,
+    0 0 5px #7af7c4,
+    0 0 5px #7af7c4,
     0 0 50px #7af7c4,
-    0 0 10px #7af7c4,
     0 0 100px rgba(122, 247, 196, 0.3);
 }
 
@@ -39,7 +44,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     letter-spacing: 10px;
-    animation: text-flicker 3s linear infinite;
+    animation: text-flicker 5s linear;
 }
 
 .navbar li:hover h1 {

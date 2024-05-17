@@ -45,11 +45,11 @@ function Main() {
             <div className="section01-contanier-title">
                 <b>D<span>E</span>OK<span>'s</span> Por<span>tf</span>ol<span>io</span></b>
             </div>
+            <Navbar handleItemClick={handleItemClick} />
             <div className='section01-content'>
                 <div className="section01-info">
                     {component}
                 </div>
-                <Navbar handleItemClick={handleItemClick} />
             </div>
         </div>
     );
