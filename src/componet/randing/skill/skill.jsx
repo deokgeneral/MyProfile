@@ -17,7 +17,7 @@ function Skill() {
         </div>
         <div className='skill-img-box02'>
           <img src='./icon/js-icon.png' alt='JS' />
-          <img src='./icon/nodejs.png' alt='노드제이에스' />
+          <img src='./icon/node-js.png' alt='노드제이에스' />
           <img src='./icon/axios.png' alt='액시오스' id='axios' /> 
           <img src='./icon/github.png' alt='깃허브' id='github'/> 
         </div>

@@ -1,8 +1,14 @@
 .skill-title h2{
-    font-size: 36px;
-    color: #20f5a0;
+    font-size: 40px;
     font-family: 'April16th-Promise';
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow:
+        0 -40px 100px,
+        0 0 2px, 0 0 1em #ff4444,
+        0 0 0.5em #ff4444,
+        0 0 0.1em #ff4444,
+        9px 9px 3px #000;
 }
 .skill-container img{
     width: 120px;

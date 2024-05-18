@@ -144,12 +144,7 @@
 }
 .about-info03-title-scorll {
     transition: color 1.75s ease;
-    text-shadow:
-        0 0 0,
-        0 0 2px, 0 0 1em #ff4444,
-        0 0 0.5em #ff4444,
-        0 0 0.1em #ff4444,
-        0 10px 3px #000;
+    text-shadow: 0 0 0, 0 0 0px, 0 0 1em #ff4444, 0 0 0em #ff4444, 0 0 0.1em #ff4444;
     animation: text-flicker-red 1.5s linear;
 }
 

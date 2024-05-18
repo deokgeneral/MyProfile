@@ -12,7 +12,6 @@
 .section01-contanier-title {
     position: relative;
     left: -370px;
-    margin-bottom: 20px;
 }
 
 .section01-contanier-title b {
@@ -24,7 +23,7 @@
         0 0 2px, 0 0 1em #ff4444,
         0 0 0.5em #ff4444,
         0 0 0.1em #ff4444,
-        0 10px 3px #000;
+        9px 9px 3px #000;
 }
 
 .section01-contanier-title b span {
