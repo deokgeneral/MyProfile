@@ -3,13 +3,14 @@
     background-size: cover;
     height: auto;
     width: 100%;
+    height: 100vh;
 }
 .main-content{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 /*섹션01 제목*/
 .main-contanier-title {
@@ -215,4 +216,11 @@
     100% {
         opacity: 0;
     }
+}
+
+/*반응형*/
+@media (max-width: 1034px) {
+    .main-contanier {
+    height: auto;
+}
 }

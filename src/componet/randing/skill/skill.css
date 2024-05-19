@@ -42,3 +42,14 @@
         transform: rotate(360deg);
     }
 }
+
+/*반응형*/
+@media (max-width: 1034px) {
+.skill-container img {
+        width: 80px;
+        margin: 10px 25px;
+    }
+    .skill-title h2{
+        font-size: 30px;
+    }
+}

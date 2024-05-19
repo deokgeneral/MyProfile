@@ -75,7 +75,7 @@
             0 0 5px #7af7c4,
             0 0 5px #7af7c4,
             0 0 5px #7af7c4,
-            0 0 100px rgba(122, 247, 196, 0.3);
+            0 0 10px rgba(122, 247, 196, 0.3);
 }
 
 /*프로젝트 인포*/
@@ -168,5 +168,37 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/*반응형*/
+@media (max-width: 1034px) {
+    .project-img-contanier{
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        height: 400px;
+    }
+    .project-img-contanier::-webkit-scrollbar {
+        display: none;
+    }
+    .project-title h2{
+        font-size: 30px;
+    }
+    .project-img-box01-title,
+    .project-img-box02-title,
+    .project-img-box03-title{
+        font-size: 13px;
+    }
+    
+    .project-img-box01-info,
+    .project-img-box02-info,
+    .project-img-box03-info{
+        font-size: 12px;
+    }
+    .project-img-box01,
+    .project-img-box02,
+    .project-img-box03{
+        margin: 10px;
     }
 }
