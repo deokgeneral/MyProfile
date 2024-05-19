@@ -73,10 +73,10 @@ function About() {
           <p>전공을살려 <span className='about-info01-span02'>프론트엔드 개발자</span>에 </p>
           <p>도전하게 됐습니다</p>
           <p>부족하지만 포기하지 않는 끈기로</p>
-          <p><span className={`about-info03-span ${scrollPosition >= 1200 ? 'underline' : ''}`}>계속해서 성장해가는 개발자가 되겠습니다.</span></p>
+          <p>계속해서 <span className={`about-info03-span ${scrollPosition >= 1100 ? 'underline' : ''}`}>성장해가는 개발자가</span> 되겠습니다.</p>
         </div>
       </div>
-    <Neondown className={scrollPosition >= 1180 ? 'flip-vertical' : 'neondown-conatainer'} />
+    <Neondown className={scrollPosition >= 1050 ? 'flip-vertical' : 'neondown-conatainer'} />
     </div>
   )
 }

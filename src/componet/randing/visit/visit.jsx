@@ -16,6 +16,7 @@ function Visit() {
 
   const [visits, setVisits] = useState([
     { id: 1, name: '구예림', comment: '안녕하세요!', date: getCurrentDate() },
+    { id: 2, name: '민덕기', comment: '열심히 할게요!!', date: getCurrentDate() },
   ]);
 
   const [newName, setNewName] = useState('');
@@ -54,7 +55,7 @@ function Visit() {
     setVisits([...visits, newEntry]);
     setNewName('');
     setNewComment('');
-    setNewDate(getCurrentDate()); // 추가 후 날짜 초기화
+    setNewDate(getCurrentDate());
 
     alert('방문기록이 완료 되었습니다!');
   };
@@ -73,34 +74,35 @@ function Visit() {
                 <p className='visit-info-comments'>{visit.comment}</p>
                 <div className='visit-info-title-date'>
                 <p className='visit-info-date'>작성날짜 : {visit.date}</p>
-                <h3 className='visit-info-title'>방문자 : <span>{visit.name}</span></h3>
+                <p className='visit-info-title'>방문자 : <span>{visit.name}</span></p>
                 </div>
               </div>
             </li>
           ))}
         </ul>
         </div>
+      </div>
         <form className='visit-add-info' onSubmit={handleAddVisit}>
-        <button type='submit' className='visit-add-info-button'> +</button>
         <input
           type='text'
           placeholder='댓글을 입력하세요'
           value={newComment}
           onChange={handleCommentChange}
           className='visit-add-info-comments'
-          />
+        />
         <div className='visit-add-info-title-date'>
           <p className='visit-add-info-date'>작성날짜 : {getCurrentDate()}</p>
-          방문자 : <input
+          <p>방문자 : <input
           type='text'
           placeholder=' 방문자'
           value={newName}
           onChange={handleNameChange}
           className='visit-add-info-name'
           />
+          </p>
+        <button type='submit' className='visit-add-info-button'>등록하기</button>
         </div>
         </form>
-      </div>
     </div>
   );
 }

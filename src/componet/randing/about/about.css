@@ -125,7 +125,7 @@
 }
 /*인포3*/
 .about-info03{
-    height: 320px;
+    height: 350px;
     color: white;
 }
 .about-info03 h2{
@@ -205,7 +205,7 @@
 }
 .about-info03-span.underline::after{
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
     display: inline-block;
     content: "";

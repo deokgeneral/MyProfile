@@ -4,7 +4,7 @@ import About from '../randing/about/about';
 import Off from "../randing/off/off";
 import Project from '../randing/project/project';
 import Skill from '../randing/skill/skill';
-import Visit from '../randing/visitRecord/visit';
+import Visit from '../randing/visit/visit';
 import "./main.css";
 
 function Main() {

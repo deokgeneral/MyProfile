@@ -14,21 +14,32 @@
 /*방명록 box*/
 .visit-content {
     position: sticky;
-    height: 350px;
     overflow-y: auto;
-    padding: 5px 20px;
+    height: 360px;
+    padding: 5px;
+    margin: 20px 0 0 0;
 }
 .visit-content::-webkit-scrollbar {
     width: 0;
     display: none;
 }
+.visit-info-comments{
+    font-size: 20px;
+}
 
 /*방명록 리스트 css*/
-.visitor-list li{ 
+.visitor-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.visitor-list li{
+    width: 45.5%;
     color: white;
     list-style-type: none;
+    overflow: hidden;
+    padding: 10px 15px;
     border: 1px solid transparent;
-    padding: 15px 30px;
     border-radius: 15px;
     box-shadow:
         0 0 5px #7af7c4,
@@ -36,30 +47,22 @@
         0 0 5px #7af7c4,
         0 0 5px #7af7c4,
         0 0 0px rgba(122, 247, 196, 0.3);
-    margin: 25px 0;
-}
-.visit-info-title{
-    font-size: 24px;
 }
 .visit-info-title span{
     color: #7af7c4;
 }
 .visit-info-title-date{
+    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-}
-.visit-info-title-date{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    font-size: 13px;
 }
 .visit-info-date{
     margin-right: 20px;
 }
 .visit-info-date,
 .visit-info-comments{
-    font-size: 24px;
     background: none;
     border: none;
 }
@@ -73,39 +76,52 @@
     padding: 15px 30px;
     border-radius: 15px;
     box-shadow:
-        0 0 5px #7af7c4,
-        0 0 5px #7af7c4,
-        0 0 5px #7af7c4,
-        0 0 5px #7af7c4,
+        0 0 5px #ffffff,
+        0 0 5px #ffffff,
+        0 0 5px #ffffff,
+        0 0 5px #ffffff,
         0 0 5px rgba(122, 247, 196, 0.3);
 }
 .visit-add-info-comments{
-    font-size: 24px;
+    font-size: 20px;
     background: none;
     border: none;
     color: white;
 }
 .visit-add-info-title-date{
+    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
-    font-size: 24px;
+    font-size: 15px;
 }
 .visit-add-info-date{
     margin-right: 20px;
-    font-size: 24px;
     border: none;
 }
 .visit-add-info-name{
     background: none;
     border: none;
-    font-size: 24px;
-    width: 68.8px;
     color: #7af7c4;
+    width: 38.93px;
+    margin-right: 10px;
 }
 .visit-add-info-button{
-    font-size: 34px;
+    font-size: 12px;
     font-weight: 700;
     color: #7af7c4;
-    background: none;
     border: none;
+    background: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #7af7c4;;
+}
+.visit-add-info-button:hover{
+    color: black;
+    background-color: #7af7c4;
+    box-shadow:
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 50px #7af7c4,
+        0 0 100px rgba(122, 247, 196, 0.3);
 }
