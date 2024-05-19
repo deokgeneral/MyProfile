@@ -100,7 +100,7 @@ function Visit() {
   return (
     <div className='visit-container'>
       <div className='visit-title'>
-        <h2>방문해주신 분들</h2>
+        <h2>방명록</h2>
       </div>
       <div className='visit-content'>
         <div className='visitor-list'>
@@ -119,6 +119,7 @@ function Visit() {
           </ul>
         </div>
       </div>
+      <div className='visit-add-info-content'>
       <form className='visit-add-info' onSubmit={handleAddVisit}>
         <input
           type='text'
@@ -139,7 +140,8 @@ function Visit() {
           </p>
           <button type='submit' className='visit-add-info-button'>등록하기</button>
         </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }
