@@ -1,3 +1,6 @@
+.visit-container{
+    padding: 30px;
+}
 .visit-title h2{
     font-size: 40px;
     font-family: 'April16th-Promise';
@@ -15,7 +18,7 @@
 .visit-content {
     position: sticky;
     overflow-y: auto;
-    height: 360px;
+    height: 330px;
     padding: 5px;
     margin: 20px 0 0 0;
 }
@@ -31,7 +34,7 @@
 .visitor-list ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
 }
 .visitor-list li{
     width: 45.5%;

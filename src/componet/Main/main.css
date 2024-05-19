@@ -1,20 +1,21 @@
-.section01-contanier {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background: url("../../../public/images/background02.png");
+.main-contanier {
+    background: url("../../../public/images/background02.png") no-repeat center center fixed;
     background-size: cover;
+    height: 100vh;
+}
+.main-content{
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0 50px;
 }
 /*섹션01 제목*/
-.section01-contanier-title {
-    position: relative;
-    left: -370px;
+.main-contanier-title {
+    padding: 30px 0 0 50px;
 }
 
-.section01-contanier-title b {
+.main-contanier-title b {
     font-family: 'Giants-Inline';
     font-size: 45px;
     color: #fee;
@@ -26,22 +27,21 @@
         9px 9px 3px #000;
 }
 
-.section01-contanier-title b span {
+.main-contanier-title b span {
     animation: title-blink linear infinite 2s;
 }
 
-.section01-contanier-title b span:nth-of-type(2) {
+.main-contanier-title b span:nth-of-type(2) {
     animation: title-blink linear infinite 3s;
 }
 
 
-.section01-info {
-    width: 1000px;
-    height: 500px;
+.main-info {
+    width: 99.6%;
+    height: 530px;
     background-color: rgb(51, 51, 51);
     border: 2px solid #7af7c4;
     border-radius: 0 0 10px 10px;
-    padding: 30px;
     margin-bottom: 20px;
     box-shadow:
             0 0 5px #7af7c4,
@@ -51,7 +51,7 @@
             0 0 100px rgba(122, 247, 196, 0.3);
 }
 
-.section01-info h1 {
+.main-info h1 {
     margin-top: 10px;
 }
 

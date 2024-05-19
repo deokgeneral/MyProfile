@@ -1,23 +1,44 @@
 /*스크롤후*/
+.neondown-conatainer,
 .flip-vertical {
-    position: relative;
+    position: absolute;
+    right: 70px;
     display: flex;
     flex-direction: column;
-    font-size: 36px;
+    font-size: 48px;
+}
+.neondown-conatainer svg,
+.flip-vertical svg {
+    color: #7af7c4;
+    margin: 40px 0;
+}
+
+.flip-vertical svg:nth-child(1) {
+    animation: neondown-blink 0.5s infinite alternate;
     transform: scaleY(-1);
 }
-.flip-vertical svg{
-    color: #7af7c4;
-    margin: -8px;
-    animation: neon-blink 0.3s infinite alternate;
+.flip-vertical svg:nth-child(2){
+    opacity: 0.1;
 }
-@keyframes neon-blink {
+
+/*네온다운 효과*/
+.neondown-conatainer svg:nth-child(1) {
+    opacity: 0.1;
+    transform: scaleY(-1);
+}
+
+.neondown-conatainer svg:nth-child(2) {
+    animation: neondown-blink 0.5s infinite alternate;
+}
+
+
+/*네온다운 애니메이션*/
+@keyframes neondown-blink {
     0% {
         opacity: 0;
     }
 
     100% {
         opacity: 1;
-        text-shadow: none;
     }
 }

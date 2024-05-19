@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /*제목관련 css*/
@@ -34,7 +35,8 @@
 }
 
 .about-img img {
-    width: 450px;
+    width: 550px;
+    height: 480px;
     border-radius: 30px;
 }
 
@@ -43,13 +45,15 @@
     font-size: 1.55rem;
     overflow-y: auto;
     font-family: 'TTHakgyoansimUndongjangL';
-    margin-left: 50px;
-    width: 540px;
+    height: 500px;
 }
 /*인포01*/
 .about-info01{
-    margin-top: 60px;
-    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
 }
 .about-info01 p{
     color: white;
@@ -82,8 +86,9 @@
 }
 /*인포02*/
 .about-info02{
+    margin-top: 50px;
     color: white;
-    height: 300px;
+    height: 400px;
 }
 .about-info02 h2{
     text-align: center;
@@ -125,7 +130,8 @@
 }
 /*인포3*/
 .about-info03{
-    height: 350px;
+    margin-top: -70px;
+    height: 850px;
     color: white;
 }
 .about-info03 h2{
@@ -142,12 +148,6 @@
     color: #ffff00;
     animation: text-flicker-yellow 3s linear infinite;
 }
-.about-info03-title-scorll {
-    transition: color 1.75s ease;
-    text-shadow: 0 0 0, 0 0 0px, 0 0 1em #ff4444, 0 0 0em #ff4444, 0 0 0.1em #ff4444;
-    animation: text-flicker-red 1.5s linear;
-}
-
 .about-info02 p.about-info02-p01-scorll{
     position: relative;
     left: 10px;
@@ -198,7 +198,11 @@
     left: -490px;
     transition: left 1.8s ease;
 }
-
+.about-info03-title-scorll {
+    transition: color 1.75s ease;
+    text-shadow: 0 0 0, 0 0 0px, 0 0 1em #ff4444, 0 0 0em #ff4444, 0 0 0.1em #ff4444;
+    animation: text-flicker-red 1.5s linear;
+}
 .about-info03-span {
     position: relative;
     
@@ -344,30 +348,4 @@
         opacity: .9;
         text-shadow: 0px 0px 29px rgba(255, 0, 0, 1)
     }
-}
-/*네온다운 효과*/
-.neondown-conatainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-size: 36px;
-    justify-content: flex-end;
-}
-
-.neondown-conatainer svg {
-    color: #7af7c4;
-    margin: -8px;
-    animation: neon-blink 0.3s infinite alternate;
-}
-
-.neondown-conatainer svg:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.neondown-conatainer svg:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.neondown-conatainer svg:nth-child(3) {
-    animation-delay: 0.3s;
 }

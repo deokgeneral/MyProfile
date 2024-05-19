@@ -1,13 +1,12 @@
 import React from 'react';
-import { IoCaretDownSharp } from "react-icons/io5";
+import { ImArrowDown } from "react-icons/im";
 import "./neondown.css";
 
 function Neondown({ className }) {
   return (
     <div className={`neondown-container ${className}`}>
-      <IoCaretDownSharp />
-      <IoCaretDownSharp />
-      <IoCaretDownSharp />
+      <ImArrowDown className='up'/>
+      <ImArrowDown className='down'/>
     </div>
   )
 }

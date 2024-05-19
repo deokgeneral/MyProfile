@@ -41,13 +41,13 @@ function Main() {
     }
 
     return (
-        <div className='section01-contanier'>
-            <div className="section01-contanier-title">
+        <div className='main-contanier'>
+            <div className="main-contanier-title">
                 <b>D<span>E</span>OK<span>'s</span> Por<span>tF</span>ol<span>io</span></b>
             </div>
+            <div className='main-content'>
             <Navbar handleItemClick={handleItemClick} />
-            <div className='section01-content'>
-                <div className="section01-info">
+                <div className="main-info">
                     {component}
                 </div>
             </div>
