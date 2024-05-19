@@ -1,7 +1,8 @@
 .main-contanier {
-    background: url("../../../public/images/background02.png") no-repeat center center fixed;
+    background: url("../../../public/images/background02.png");
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    width: 100%;
 }
 .main-content{
     display: flex;
