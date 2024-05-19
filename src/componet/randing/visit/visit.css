@@ -7,12 +7,11 @@
     margin-bottom: 10px;
     color: white;
     text-shadow:
-        0 -40px 100px,
-        0 0 2px,
-        0 0 1em #ff4444,
-        0 0 0.5em #ff4444,
-        0 0 0.1em #ff4444,
-        9px 9px 3px #000;
+    0 0 0px,
+    0 0 0px, 0 0 1em #ff4444,
+    0 0 0em #ff4444,
+    0 0 0.1em #ff4444,
+    6px 6px 2px #000;
 }
 /*방명록 box*/
 .visit-content {

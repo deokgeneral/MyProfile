@@ -62,11 +62,9 @@
 }
 
 @media (max-width: 1132px) {
-    .navbar-container {
-        width: 100%;
-    }
     .navbar{
         opacity: 1;
+        height: 50px;
     }
     .navbar li{
         display: flex;
