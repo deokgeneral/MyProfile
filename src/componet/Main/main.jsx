@@ -43,7 +43,7 @@ function Main() {
     return (
         <div className='section01-contanier'>
             <div className="section01-contanier-title">
-                <b>D<span>E</span>OK<span>'s</span> Por<span>tf</span>ol<span>io</span></b>
+                <b>D<span>E</span>OK<span>'s</span> Por<span>tF</span>ol<span>io</span></b>
             </div>
             <Navbar handleItemClick={handleItemClick} />
             <div className='section01-content'>

@@ -1,12 +1,111 @@
-.visit-title{
+.visit-title h2{
     font-size: 40px;
     font-family: 'April16th-Promise';
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: white;
-    text-shadow: 0 -40px 100px,
-    0 0 2px,
-    0 0 1em #ff4444,
-    0 0 0.5em #ff4444,
-    0 0 0.1em #ff4444,
-    9px 9px 3px #000;
+    text-shadow:
+        0 -40px 100px,
+        0 0 2px,
+        0 0 1em #ff4444,
+        0 0 0.5em #ff4444,
+        0 0 0.1em #ff4444,
+        9px 9px 3px #000;
+}
+/*방명록 box*/
+.visit-content {
+    position: sticky;
+    height: 350px;
+    overflow-y: auto;
+    padding: 5px 20px;
+}
+.visit-content::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+/*방명록 리스트 css*/
+.visitor-list li{ 
+    color: white;
+    list-style-type: none;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow:
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 0px rgba(122, 247, 196, 0.3);
+    margin: 25px 0;
+}
+.visit-info-title{
+    font-size: 24px;
+}
+.visit-info-title span{
+    color: #7af7c4;
+}
+.visit-info-title-date{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.visit-info-title-date{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.visit-info-date{
+    margin-right: 20px;
+}
+.visit-info-date,
+.visit-info-comments{
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+
+/*방문자기록칸*/
+.visit-add-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow:
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px #7af7c4,
+        0 0 5px rgba(122, 247, 196, 0.3);
+}
+.visit-add-info-comments{
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+.visit-add-info-title-date{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+.visit-add-info-date{
+    margin-right: 20px;
+    font-size: 24px;
+    border: none;
+}
+.visit-add-info-name{
+    background: none;
+    border: none;
+    font-size: 24px;
+    width: 68.8px;
+    color: #7af7c4;
+}
+.visit-add-info-button{
+    font-size: 34px;
+    font-weight: 700;
+    color: #7af7c4;
+    background: none;
+    border: none;
 }

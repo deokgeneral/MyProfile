@@ -24,14 +24,14 @@ function Project() {
         </div>
         <div className='project-img-box02'>
           <div className='project-img-box02-title'>
-            <h3>2. MBTI별 강아지추천 사이트</h3>
+            <h3>2. JS를 이용한 다양한 HTML</h3>
           </div>
           <img src='/images/MPPM.png' alt='MPPM 이미지' />
           <div className='project-img-box02-info'>
             <p>개인의 'MBTI'와 어울리는</p>
             <p>강아지를 추천해주는 사이트입니다.</p>
             <div className='project-img-box02-info-hide'>
-            <Link to="https://deokgeneral.github.io/MPPM/" target="_blank">사이트 들어가기</Link>
+            <Link to="https://deokgeneral.github.io/MPPM/" target="_blank">깃 허브이동하기</Link>
             </div>
           </div>
         </div>

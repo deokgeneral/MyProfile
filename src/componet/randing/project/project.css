@@ -29,6 +29,11 @@
     padding: 10px 0;
     color: white;
 }
+.project-img-box01:hover .project-img-box01-title,
+.project-img-box02:hover .project-img-box02-title,
+.project-img-box03:hover .project-img-box03-title{
+    color: #7af7c4;
+}
 .project-img-box01,
 .project-img-box02,
 .project-img-box03{
@@ -97,9 +102,9 @@
 .project-img-box01-info-hide a,
 .project-img-box02-info-hide a,
 .project-img-box03-info-hide a{
-    color: #20f5a0;
+    color: #7af7c4;
     text-decoration: none;
-    border: 2px solid #20f5a0;
+    border: 2px solid #7af7c4;
     padding: 5px 15px;
     border-radius: 5px;
     opacity: 0;
@@ -110,7 +115,7 @@
 .project-img-box03-info-hide a:hover{
     color: black;
     font-weight: 700;
-    background-color: #20f5a0;
+    background-color: #7af7c4;
     box-shadow:
             0 0 5px #7af7c4,
             0 0 5px #7af7c4,
