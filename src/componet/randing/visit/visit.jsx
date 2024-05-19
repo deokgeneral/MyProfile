@@ -1,8 +1,23 @@
-import React, { useState } from 'react';
+import { initializeApp } from 'firebase/app';
+import { addDoc, collection, getDocs, getFirestore } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
 import './visit.css';
 
+const firebaseConfig = {
+  apiKey: "AIzaSyAnavHdGdZ1re9PnvIk2xYz9F4UI_JiHJI",
+  authDomain: "deok-s-portfolio.firebaseapp.com",
+  projectId: "deok-s-portfolio",
+  storageBucket: "deok-s-portfolio.appspot.com",
+  messagingSenderId: "1074753454322",
+  appId: "1:1074753454322:web:24d1e714952ef39104106b",
+  measurementId: "G-FB4HQB6P14"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 function Visit() {
-  // 현재 날짜를 YYYY-MM-DD 형식으로 가져오는 함수
   const getCurrentDate = () => {
     const now = new Date();
     const year = now.getFullYear();
@@ -14,10 +29,27 @@ function Visit() {
     return `${year}-${month}-${day}`;
   };
 
-  const [visits, setVisits] = useState([
-    { id: 1, name: '구예림', comment: '안녕하세요!', date: getCurrentDate() },
-    { id: 2, name: '민덕기', comment: '열심히 할게요!!', date: getCurrentDate() },
-  ]);
+  const [visits, setVisits] = useState([]);
+
+  const fetchVisits = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, 'visitItem'));
+      const fetchedVisits = [];
+      querySnapshot.forEach(doc => {
+        fetchedVisits.push({
+          id: doc.id,
+          ...doc.data()
+        });
+      });
+      setVisits(fetchedVisits);
+    } catch (error) {
+      console.error("Error fetching visits: ", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchVisits();
+  }, []);
 
   const [newName, setNewName] = useState('');
   const [newComment, setNewComment] = useState('');
@@ -30,34 +62,39 @@ function Visit() {
   const handleCommentChange = (e) => {
     setNewComment(e.target.value);
   };
-
-  const handleDateChange = (e) => {
-    setNewDate(e.target.value);
-  };
-
-  const handleAddVisit = (e) => {
+  const handleAddVisit = async (e) => {
     e.preventDefault(); // 기본 동작 방지
 
     if (newName.trim() === '' || newComment.trim() === '' || newDate.trim() === '') {
-      alert('이름, 댓글를 모두 입력해주세요.');
+      alert('이름, 댓글을 모두 입력해주세요.');
       return;
     }
 
-    const newId = visits.length > 0 ? visits[visits.length - 1].id + 1 : 1;
+    try {
+      const docRef = await addDoc(collection(db, "visitItem"), {
+        name: newName,
+        comment: newComment,
+        date: newDate
+      });
+      console.log("Document written with ID: ", docRef.id);
 
-    const newEntry = {
-      id: newId,
-      name: newName,
-      comment: newComment,
-      date: newDate
-    };
+      const newEntry = {
+        id: docRef.id,
+        name: newName,
+        comment: newComment,
+        date: newDate
+      };
 
-    setVisits([...visits, newEntry]);
-    setNewName('');
-    setNewComment('');
-    setNewDate(getCurrentDate());
+      setVisits([...visits, newEntry]);
+      setNewName('');
+      setNewComment('');
+      setNewDate(getCurrentDate());
 
-    alert('방문기록이 완료 되었습니다!');
+      alert('방문기록이 완료 되었습니다!');
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert('방문기록을 추가하는 중 오류가 발생했습니다.');
+    }
   };
 
   return (
@@ -66,23 +103,23 @@ function Visit() {
         <h2>방문해주신 분들</h2>
       </div>
       <div className='visit-content'>
-      <div className='visitor-list'>
-        <ul>
-          {visits.map(visit => (
-            <li key={visit.id}>
-              <div className='visit-info'>
-                <p className='visit-info-comments'>{visit.comment}</p>
-                <div className='visit-info-title-date'>
-                <p className='visit-info-date'>작성날짜 : {visit.date}</p>
-                <p className='visit-info-title'>방문자 : <span>{visit.name}</span></p>
+        <div className='visitor-list'>
+          <ul>
+            {visits.map(visit => (
+              <li key={visit.id}>
+                <div className='visit-info'>
+                  <p className='visit-info-comments'>{visit.comment}</p>
+                  <div className='visit-info-title-date'>
+                    <p className='visit-info-date'>작성날짜 : {visit.date}</p>
+                    <p className='visit-info-title'>방문자 : <span>{visit.name}</span></p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-        <form className='visit-add-info' onSubmit={handleAddVisit}>
+      <form className='visit-add-info' onSubmit={handleAddVisit}>
         <input
           type='text'
           placeholder='댓글을 입력하세요'
@@ -93,16 +130,16 @@ function Visit() {
         <div className='visit-add-info-title-date'>
           <p className='visit-add-info-date'>작성날짜 : {getCurrentDate()}</p>
           <p>방문자 : <input
-          type='text'
-          placeholder=' 방문자'
-          value={newName}
-          onChange={handleNameChange}
-          className='visit-add-info-name'
+            type='text'
+            placeholder=' 방문자'
+            value={newName}
+            onChange={handleNameChange}
+            className='visit-add-info-name'
           />
           </p>
-        <button type='submit' className='visit-add-info-button'>등록하기</button>
+          <button type='submit' className='visit-add-info-button'>등록하기</button>
         </div>
-        </form>
+      </form>
     </div>
   );
 }
