@@ -33,7 +33,7 @@
 .visitor-list ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 .visitor-list li{
     width: 45.5%;
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    font-size: 13px;
+    font-size: 17px;
 }
 .visit-info-date{
     margin-right: 20px;
@@ -94,7 +94,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
-    font-size: 15px;
+    font-size: 17px;
 }
 .visit-add-info-date{
     margin-right: 20px;
@@ -133,7 +133,7 @@
     .visitor-list ul {
         display: flex;
         flex-wrap: nowrap;
-        gap: 12px;
+        gap: 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -152,6 +152,10 @@
     }
     .visit-add-info-title-date,
     .visit-info-title-date{
-        font-size: 10px;
+        font-size: 8.5px;
+    }
+    .visit-add-info-comments,
+    .visit-info-comments{
+        font-size: 13px;
     }
 }
