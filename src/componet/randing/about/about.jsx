@@ -31,7 +31,7 @@ function About() {
 
   return (
     <div className='about-container'>
-      <div className='about-img'>
+      <div className='about-img-box'>
         <img src="./images/profile.png" alt='나의이미지'/>
       </div>
       <div className='about-info-content' ref={aboutInfoContentRef}>

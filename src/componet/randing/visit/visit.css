@@ -17,9 +17,11 @@
 .visit-content {
     position: sticky;
     overflow-y: auto;
-    height: 330px;
+    height: 430px;
     padding: 5px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
+    border-bottom: 2px solid #7af7c4;
+    
 }
 .visit-content::-webkit-scrollbar {
     width: 0;
@@ -32,6 +34,7 @@
 /*방명록 리스트 css*/
 .visitor-list ul{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -70,7 +73,13 @@
 }
 
 /*방문자기록칸*/
+.visit-add-info-content{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+}
 .visit-add-info{
+    width: 45.5%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -104,8 +113,9 @@
     background: none;
     border: none;
     color: #7af7c4;
-    width: 38.93px;
+    width: 50px;
     margin-right: 10px;
+    font-size: 17px;
 }
 .visit-add-info-button{
     font-size: 12px;
