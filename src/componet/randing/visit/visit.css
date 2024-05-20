@@ -129,7 +129,7 @@
 }
 
 /*반응형*/
-@media (max-width: 1034px) {
+@media (max-width: 1100px) {
     .visitor-list ul {
         display: flex;
         flex-wrap: nowrap;
