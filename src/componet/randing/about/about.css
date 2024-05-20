@@ -357,30 +357,30 @@
         flex-direction: column;
     }
     .about-img img {
-        width: 150px;
+        width: 170px;
         height: auto;
         padding: 15px;
     }
     .about-info01{
-    height: 270px;
+    height: 250px;
     }
     .about-info01,
     .about-info02,
     .about-info03{
-        font-size: 16px;
+        font-size: 12px;
     }
     .about-info03{
         height: 700px;
     }
     .about-info03 p,
     .about-info02 p{
-        padding-left: 30px;
+        padding-left: 50px;
     }
     .about-info01-span01{
-        font-size: 30px;
+        font-size: 20px;
     }
     .about-info01-span02{
-        font-size: 20px;
+        font-size: 15px;
     }
     .about-info02-span01,
     .about-info02-span02,
@@ -390,7 +390,7 @@
         font-size: 15px;
     }
     .about-info-title span{
-        font-size: 20px;
+        font-size: 15px;
     }
     .about-info-title{
         font-size: 24px;
