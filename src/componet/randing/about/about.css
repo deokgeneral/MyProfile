@@ -8,11 +8,17 @@
 .about-info-title {
     position: sticky;
     font-size: 36px;
-    border-bottom: 3px solid;
-    border-top: none;
+    border: 3px solid transparent;
     padding: 20px 0;
     top: 0;
     color: #20f5a0;
+    box-shadow:
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 5px #7af7c4,
+            0 0 20px rgba(122, 247, 196, 0.3);
+    background-color: rgb(77,77,77);
     z-index: 999;
 }
 .about-info-title span,
@@ -46,7 +52,7 @@
 .about-info-content {
     width: 50%;
     height: 600px;
-    padding: 0 50px;
+    padding: 1px;
     font-size: 34px;
     overflow-y: auto;
     font-family: 'TTHakgyoansimUndongjangL';
