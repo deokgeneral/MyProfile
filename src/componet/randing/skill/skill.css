@@ -1,6 +1,10 @@
 .skill-container{
     padding: 30px;
 }
+#react-router{
+    width: 220px;
+    height: 140px;
+}
 .skill-title h2{
     font-size: 40px;
     font-family: 'April16th-Promise';
@@ -25,7 +29,6 @@
 .skill-img-box02{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
 
@@ -50,5 +53,9 @@
     }
     .skill-title h2{
         font-size: 30px;
+    }
+    #react-router{
+        width: 80px;
+        height: 60px;
     }
 }

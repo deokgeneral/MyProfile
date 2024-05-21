@@ -13,7 +13,7 @@ function Skill() {
           <img src='./icon/html.png' alt='html' />
           <img src='./icon/html-css.png' alt='html-css' />
           <img src='./icon/react.png' alt='리액트' className="react-spin" />
-          <img src='./icon/reactrouter_logo.png' alt='리액트라우터' />
+          <img src='./icon/reactrouter_logo.png' alt='리액트라우터' id='react-router' />
         </div>
         <div className='skill-img-box02'>
           <img src='./icon/js-icon.png' alt='JS' />

@@ -3,7 +3,7 @@
 }
 .project-img-contanier{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .project-title h2{
