@@ -34,7 +34,7 @@
 /*방명록 리스트 css*/
 .visitor-list ul{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -140,6 +140,13 @@
 
 /*반응형*/
 @media (max-width: 1100px) {
+    .visit-content{
+        height: 370px;
+        margin: 13px 0;
+    }
+    .about-info-content{
+        width: 100%;
+    }
     .visitor-list ul {
         display: flex;
         flex-wrap: nowrap;
@@ -148,7 +155,7 @@
         align-items: center;
     }
     .visit-title h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     .visitor-list li {
         width: 180px;
@@ -159,6 +166,8 @@
     .visit-add-info-content {
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: 0;
     }
     .visit-add-info-title-date,
     .visit-info-title-date{

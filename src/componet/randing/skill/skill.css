@@ -47,14 +47,18 @@
 
 /*반응형*/
 @media (max-width: 1100px) {
+.skill-img-container{
+    display: flex;
+    justify-content: center;
+}
 .skill-container img {
         width: 80px;
         margin: 10px 25px;
     }
-    .skill-title h2{
-        font-size: 30px;
+.skill-title h2{
+        font-size: 25px;
     }
-    #react-router{
+#react-router{
         width: 80px;
         height: 60px;
     }
