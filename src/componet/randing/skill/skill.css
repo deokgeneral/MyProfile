@@ -2,7 +2,7 @@
     padding: 30px;
 }
 #react-router{
-    width: 220px;
+    width: 250px;
     height: 140px;
 }
 .skill-title h2{
@@ -20,6 +20,7 @@
 .skill-img-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .skill-container img{
     width: 180px;
@@ -30,6 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 800px;
 }
 
 .react-spin{
@@ -51,15 +53,18 @@
     display: flex;
     justify-content: center;
 }
+.skill-img-container::-webkit-scrollbar {
+    display: none;
+}
 .skill-container img {
-        width: 80px;
+        width: 60px;
         margin: 10px 25px;
     }
 .skill-title h2{
         font-size: 25px;
     }
 #react-router{
-        width: 80px;
+        width: 90px;
         height: 60px;
     }
 }

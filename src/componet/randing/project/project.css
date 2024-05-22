@@ -4,7 +4,6 @@
 .project-img-contanier{
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 .project-title h2{
     font-size: 40px;
@@ -54,6 +53,21 @@
     padding: 10px 0;
     color: white;
 }
+.project-img-box03-title{
+    border-bottom: 1px solid #7af7c4;
+}
+.project-img-box03_img{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    background-color: #ffff;
+}
+.project-img-box03_img img{
+    width: 200px;
+    height: 50px;
+}
 .project-img-box01:hover .project-img-box01-title,
 .project-img-box02:hover .project-img-box02-title,
 .project-img-box03:hover .project-img-box03-title{
@@ -90,6 +104,10 @@
     font-size: 18px;
     color: white;
     padding: 5px 10px;
+    width: 100%;
+}
+.project-img-box03-info{
+    border-top: 1px solid #7af7c4;
 }
 .project-img-box01-info p,
 .project-img-box02-info p,

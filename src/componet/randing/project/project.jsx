@@ -41,14 +41,16 @@ function Project() {
         </div>
         <div className='project-img-box03'>
           <div className='project-img-box03-title'>
-            <h3>3. ProJect - DoGgo</h3>
+            <h3>3. ProJect - Poomgo</h3>
           </div>
-          <img src='/images/MPPM.png' alt='MPPM 이미지' />
+            <div className='project-img-box03_img'>
+              <img src='/icon/poomgo_logo.png' alt='품고' />
+            </div>
           <div className='project-img-box03-info'>
-            <p></p>
-            <p>강아지를 추천해주는 사이트입니다.</p>
+            <p>'Poomgo'사이트의 메인화면을</p>
+            <p>개발해본 경험이있습니다.</p>
             <div className='project-img-box03-info-hide'>
-            <Link to="https://deokgeneral.github.io/MPPM/" target="_blank">사이트 들어가기</Link>
+            <Link to="https://poomgo.com/" target="_blank">사이트 들어가기</Link>
             </div>
           </div>
         </div>

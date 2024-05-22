@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaGear } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-import Neondown from '../../neondown/neondow';
 import './about.css';
 
 function About() {
@@ -46,7 +45,7 @@ function About() {
           <p>끈기와 밝은 애너지를 가진</p>
           <p><span className='about-info01-span01'>" 민덕기 "</span> 입니다.</p>
           <p>사람과 소통하는걸 즐기고 협동심이 강하며</p>
-          <p>새벽에도 치지지 않고 거리를 밝히는</p>
+          <p>새벽에도 지치지 않고 거리를 밝히는</p>
           <p>뒷골목의 <span className='about-info01-span02'> 전광판</span> 처럼</p>
           <p>끝까지 성장하는 개발자가 되겠습니다</p>
         </div>
@@ -66,7 +65,7 @@ function About() {
           <p>전공 : <span className='about-info01-span02'> 컴퓨터공학부</span></p>
           <p>거주지 : 경기도 양주시 고덕로 340-12</p>
           <h2><span className={scrollPosition >= 765 ? 'about-info03-title-scorll' : ''}>입사 후 포부</span></h2>
-          <p><span className={`about-info03-span ${scrollPosition >= 765 ? 'underline' : ''}`}>한 기업의 사이트를 개발하여</span></p>
+          <p><span className={`about-info03-span ${scrollPosition >= 765 ? 'underline' : ''}`}>개인의 사이트가아닌</span></p>
           <p>정식으로 유저들에게 <span className='about-info01-span02'>서비스</span>하는 것이</p>
           <p>저의 첫 목표입니다.</p>
           <h2><span className={scrollPosition >= 820 ? 'about-info03-title-scorll' : ''}>끝내며...</span></h2>
@@ -76,7 +75,6 @@ function About() {
           <p>계속해서 <span className={`about-info03-span ${scrollPosition >= 820 ? 'underline' : ''}`}>성장해가는 개발자가</span> 되겠습니다.</p>
         </div>
       </div>
-    <Neondown className={scrollPosition >= 1090 ? 'flip-vertical' : 'neondown-conatainer'} />
     </div>
   )
 }
