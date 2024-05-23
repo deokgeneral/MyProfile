@@ -64,15 +64,22 @@ function About() {
           <p>최종학력 : <span className={`about-info03-span ${scrollPosition >= 550 ? 'underline' : ''}`}>한신대학교</span> 졸업</p>
           <p>전공 : <span className='about-info01-span02'> 컴퓨터공학부</span></p>
           <p>거주지 : 경기도 양주시 고덕로 340-12</p>
-          <h2><span className={scrollPosition >= 765 ? 'about-info03-title-scorll' : ''}>입사 후 포부</span></h2>
-          <p><span className={`about-info03-span ${scrollPosition >= 765 ? 'underline' : ''}`}>개인의 사이트가아닌</span></p>
-          <p>정식으로 유저들에게 <span className='about-info01-span02'>서비스</span>하는 것이</p>
-          <p>저의 첫 목표입니다.</p>
+          <div className='about-info03-02'>
+          <h2><span className={scrollPosition >= 765 ? 'about-info03-title-scorll' : ''}>문제해결 및 목표</span></h2>
+          <p>처음 접하는 코드의 경우 공식사이트의 문서를 참고하고</p>
+          <p>오타나 간단한 문제에 경우 "chat-gpt"를 사용하여 해결했습니다</p>
+          <p>또한 주로 <Link to={"https://codepen.io/"}>"https://codepen.io/"</Link> 를 참고하여</p>
+          <p>새로운 디자인이나 다른사람들의 코드를 분석하고 이해하는 것을 좋아합니다.</p>
+          <p>개발자가 된다면, <span className={`about-info03-span ${scrollPosition >= 765 ? 'underline' : ''}`}>개인의 사이트가아닌</span> 정식으로 유저들에게</p>
+          <p><span className='about-info01-span02'>서비스</span>하는 것이 저의 첫 목표입니다.</p>
+          </div>
           <h2><span className={scrollPosition >= 820 ? 'about-info03-title-scorll' : ''}>끝내며...</span></h2>
-          <p>전공을살려 <span className='about-info01-span02'>프론트엔드 개발자</span>에 </p>
+          <p>졸업 후 건설현장과 수도 정비 일을 했지만</p>
+          <p>무계획적이고 항상 위험을 동반했습니다.</p>
+          <p>더 늦기전에<span className='about-info01-span02'>프론트엔드 개발자</span>로</p>
           <p>도전하게 됐습니다</p>
-          <p>부족하지만 포기하지 않는 끈기로</p>
-          <p>계속해서 <span className={`about-info03-span ${scrollPosition >= 820 ? 'underline' : ''}`}>성장해가는 개발자가</span> 되겠습니다.</p>
+          <p>현재는 부족하지만 <span className={`about-info03-span ${scrollPosition >= 820 ? 'underline' : ''}`}>포기하지않는 끈기로</span></p>
+          <p>성장하는 개발자가 되겠습니다.</p>
         </div>
       </div>
     </div>
