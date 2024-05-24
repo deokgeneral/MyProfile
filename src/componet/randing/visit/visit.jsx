@@ -100,7 +100,7 @@ function Visit() {
   return (
     <div className='visit-container'>
       <div className='visit-title'>
-        <h2>방명록</h2>
+        <h2>Guest book</h2>
       </div>
       <div className='visit-content'>
         <div className='visitor-list'>

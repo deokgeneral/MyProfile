@@ -6,12 +6,12 @@ function Project() {
   return (
     <div className='project-contanier'>
       <div className='project-title'>
-        <h2>만들어본 사이트</h2>
+        <h2>My work</h2>
       </div>
       <div className='project-img-contanier'>
         <div className='project-img-box01'>
           <div className='project-img-box01-title'>
-            <h3>1. MBTI별 강아지추천 사이트</h3>
+            <h3>MBTI별 강아지추천 사이트</h3>
           </div>
           <img src='/images/MPPM.png' alt='MPPM 이미지' />
             <div className='project-img-box01-info'>
@@ -24,7 +24,7 @@ function Project() {
         </div>
         <div className='project-img-box02'>
           <div className='project-img-box02-title'>
-            <h3>2. JS를 이용한 다양한 HTML</h3>
+            <h3>JS를 이용한 다양한 HTML</h3>
           </div>
           <div className='project-img02'>
             <h2>HTML</h2>
@@ -41,7 +41,7 @@ function Project() {
         </div>
         <div className='project-img-box03'>
           <div className='project-img-box03-title'>
-            <h3>3. ProJect - Poomgo</h3>
+            <h3>ProJect - Poomgo</h3>
           </div>
             <div className='project-img-box03_img'>
               <img src='/icon/poomgo_logo.png' alt='품고' />
@@ -51,6 +51,21 @@ function Project() {
             <p>개발해본 경험이있습니다.</p>
             <div className='project-img-box03-info-hide'>
             <Link to="https://poomgo.com/" target="_blank">사이트 들어가기</Link>
+            </div>
+          </div>
+        </div>
+        <div className='project-img-box04'>
+          <div className='project-img-box04-title'>
+            <h3>My Profile</h3>
+          </div>
+            <div className='project-img-box04_img'>
+              <img src='/images/myprofile.png' alt='품고' />
+            </div>
+          <div className='project-img-box04-info'>
+            <p>React를 사용하여</p>
+            <p>포트폴리오사이트를 구현해봤습니다.</p>
+            <div className='project-img-box04-info-hide'>
+            <Link to="https://deok-s-portfolio.web.app" target="_blank">사이트 들어가기</Link>
             </div>
           </div>
         </div>

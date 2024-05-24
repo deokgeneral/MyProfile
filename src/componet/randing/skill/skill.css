@@ -25,6 +25,10 @@
 .skill-container img{
     width: 180px;
     margin: 10px 25px;
+    transition: transform 0.5s ease;
+}
+.skill-container img:hover{
+    transform: scale(1.2);
 }
 .skill-img-box01,
 .skill-img-box02{
@@ -33,7 +37,9 @@
     align-items: center;
     width: 800px;
 }
-
+#firebase{
+    width: 300px;
+}
 .react-spin{
     animation: spin 12s linear infinite;
 }
@@ -63,6 +69,9 @@
 .skill-title h2{
         font-size: 25px;
     }
+#firebase{
+    width: 100px;
+}
 #react-router{
         width: 90px;
         height: 60px;

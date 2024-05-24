@@ -19,9 +19,9 @@ function Navbar({ handleItemClick }) {
                 <li className="navbar-project-btn" onClick={() => handleClick('project')}>
                     <h1>PROJECT</h1>
                 </li>
-                <li className="navbar-skill-btn" onClick={() => handleClick('skill')}>
+                {/* <li className="navbar-skill-btn" onClick={() => handleClick('skill')}>
                     <h1>SKILL</h1>
-                </li>
+                </li> */}
                 <li className="navbar-memo-btn" onClick={() => handleClick('visit')}>
                     <h1>VISIT</h1>
                 </li>

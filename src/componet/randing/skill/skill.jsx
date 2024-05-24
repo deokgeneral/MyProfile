@@ -21,6 +21,7 @@ function Skill() {
           <img src='./icon/axios.png' alt='액시오스' id='axios' /> 
           <img src='./icon/github.png' alt='깃허브' id='github' />
           <img src='./icon/js-icon.png' alt='JS' />
+          <img src='./icon/firebase.png' alt='JS' id='firebase'/>
         </div>
       </div>
 

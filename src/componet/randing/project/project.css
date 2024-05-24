@@ -4,6 +4,7 @@
 .project-img-contanier{
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 .project-title h2{
     font-size: 40px;
@@ -20,7 +21,7 @@
 .project-img02,
 .project-img-contanier img{
     width: 350px;
-    height: 300px;
+    height: 350px;
 }
 .project-img02{
     display: flex;
@@ -46,7 +47,8 @@
 /*프로젝트 타이틀*/
 .project-img-box01-title,
 .project-img-box02-title,
-.project-img-box03-title{
+.project-img-box03-title,
+.project-img-box04-title{
     text-align: center;
     font-size: 18px;
     width: 100%;
@@ -60,7 +62,7 @@
     display: flex;
     justify-content: center;
     width: 350px;
-    height: 300px;
+    height: 350px;
     align-items: center;
     background-color: #ffff;
 }
@@ -70,12 +72,14 @@
 }
 .project-img-box01:hover .project-img-box01-title,
 .project-img-box02:hover .project-img-box02-title,
-.project-img-box03:hover .project-img-box03-title{
+.project-img-box03:hover .project-img-box03-title,
+.project-img-box03:hover .project-img-box04-title{
     color: #7af7c4;
 }
 .project-img-box01,
 .project-img-box02,
-.project-img-box03{
+.project-img-box03,
+.project-img-box04{
     display: flex;
     margin: 0 30px;
     flex-direction: column;
@@ -95,7 +99,8 @@
 /*프로젝트 인포*/
 .project-img-box01-info,
 .project-img-box02-info,
-.project-img-box03-info{
+.project-img-box03-info,
+.project-img-box04-info{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -111,7 +116,8 @@
 }
 .project-img-box01-info p,
 .project-img-box02-info p,
-.project-img-box03-info p{
+.project-img-box03-info p,
+.project-img-box04-info p{
     opacity: 1;
     transition: opacity 0.3s ease;
 }
@@ -127,6 +133,10 @@
     transform: scale(1.05);
     cursor: pointer;
 }
+.project-img-box04:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 .project-img-box01:hover .project-img-box01-info p{
     opacity: 0;
 }
@@ -136,15 +146,20 @@
 .project-img-box03:hover .project-img-box03-info p {
     opacity: 0;
 }
+.project-img-box04:hover .project-img-box04-info p {
+    opacity: 0;
+}
 .project-img-box01-info-hide,
 .project-img-box02-info-hide,
-.project-img-box03-info-hide{
+.project-img-box03-info-hide,
+.project-img-box04-info-hide{
     position: absolute;
     font-weight: 700;
 }
 .project-img-box01-info-hide a,
 .project-img-box02-info-hide a,
-.project-img-box03-info-hide a{
+.project-img-box03-info-hide a,
+.project-img-box04-info-hide a{
     color: #7af7c4;
     text-decoration: none;
     border: 2px solid #7af7c4;
@@ -155,7 +170,8 @@
 }
 .project-img-box01-info-hide a:hover,
 .project-img-box02-info-hide a:hover,
-.project-img-box03-info-hide a:hover{
+.project-img-box03-info-hide a:hover,
+.project-img-box04-info-hide a:hover{
     color: black;
     font-weight: 700;
     background-color: #7af7c4;
@@ -173,6 +189,9 @@
     opacity: 1;
 }
 .project-img-box03:hover .project-img-box03-info-hide a {
+    opacity: 1;
+}
+.project-img-box04:hover .project-img-box04-info-hide a {
     opacity: 1;
 }
 
@@ -217,6 +236,6 @@
     .project-img-box01,
     .project-img-box02,
     .project-img-box03{
-        margin: 10px;
+        margin: 20px 10px;
     }
 }

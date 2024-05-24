@@ -1,7 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaGear } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import './about.css';
+//아이콘 임포트
+import { FaGithub, FaSchoolFlag } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { IoCall } from "react-icons/io5";
+import { LiaBirthdayCakeSolid } from "react-icons/lia";
+import { MdPeopleAlt } from "react-icons/md";
 
 function About() {
   const [rotation, setRotation] = useState(0);
@@ -31,55 +36,127 @@ function About() {
   return (
     <div className='about-container'>
       <div className='about-img-box'>
-        <img src="./images/profile.png" alt='나의이미지'/>
-      </div>
-      <div className='about-info-content' ref={aboutInfoContentRef}>
-        <div className='about-info-title'>
-          <p>WHO IS 덕기
-            <span style={{ transform: `rotate(${rotation}deg)` }}>
-              <FaGear />
-            </span>
-          </p>
-        </div>
+        <img src="./images/profile.jpeg" alt='나의이미지' />
         <div className='about-info01'>
           <p>끈기와 밝은 애너지를 가진</p>
-          <p><span className='about-info01-span01'>" 민덕기 "</span> 입니다.</p>
-          <p>사람과 소통하는걸 즐기고 협동심이 강하며</p>
+          <p><span className='about-info01-span01'>민덕기</span> 입니다.</p>
           <p>새벽에도 지치지 않고 거리를 밝히는</p>
           <p>뒷골목의 <span className='about-info01-span02'> 전광판</span> 처럼</p>
           <p>끝까지 성장하는 개발자가 되겠습니다</p>
         </div>
-        <div className='about-info02'>
-          <h2><span className={scrollPosition >= 250 ? 'about-info03-title-scorll' : ''}>개인 정보</span></h2>
-          <p className={scrollPosition >= 220 ? 'about-info02-p01-scorll' : 'about-info02-p01-scorll-after'}>이름 : <span className='about-info02-span01'>민덕기</span></p>
-          <p className={scrollPosition >= 220 ? 'about-info02-p02-scorll' : 'about-info02-p02-scorll-after'}>생년월일 : <span className='about-info02-span02'>1997년 9월 23일</span></p>
-          <p className={scrollPosition >= 220 ? 'about-info02-p03-scorll' : 'about-info02-p03-scorll-after'}>연락처 : <span className='about-info02-span03'>010-8948-9709</span></p>
-          <p className={scrollPosition >= 220 ? 'about-info02-p04-scorll' : 'about-info02-p04-scorll-after'}>E-mail : <span className='about-info02-span04'>alsejrrl9723@naver.com</span></p>
-          <p className={scrollPosition >= 220 ? 'about-info02-p05-scorll' : 'about-info02-p05-scorll-after'}>Git-Hub : <Link to={'https://github.com/deokgeneral'} target='_blank'>
-            https://github.com/deokgenera3
-          </Link></p>
+      </div>
+      <div className='about-info-content' ref={aboutInfoContentRef}>
+        <div className='reason'>
+          <h2><span className={scrollPosition >= 0 ? 'about-title-scorll' : ''}>MY THINK ?</span></h2>
+          <p>제가 생각하는 옳은 프론트엔드 개발자의 모습은</p>
+          <p>최신 트렌드와 기술을 빠르게 캐치하고</p>
+          <p>유연한 생각과 색다른 아이디어로</p>
+          <p>사용자들의 니즈를 충족시켜주는 것이라 생각합니다.</p>
         </div>
-        <div className='about-info03'>
-          <h2><span className={scrollPosition >= 550 ? 'about-info03-title-scorll' : ''}>학력 및 출신지</span></h2>
-          <p>최종학력 : <span className={`about-info03-span ${scrollPosition >= 550 ? 'underline' : ''}`}>한신대학교</span> 졸업</p>
-          <p>전공 : <span className='about-info01-span02'> 컴퓨터공학부</span></p>
-          <p>거주지 : 경기도 양주시 고덕로 340-12</p>
-          <div className='about-info03-02'>
-          <h2><span className={scrollPosition >= 765 ? 'about-info03-title-scorll' : ''}>문제해결 및 목표</span></h2>
-          <p>처음 접하는 코드의 경우 공식사이트의 문서를 참고하고</p>
-          <p>오타나 간단한 문제에 경우 "chat-gpt"를 사용하여 해결했습니다</p>
-          <p>또한 주로 <Link to={"https://codepen.io/"}>"https://codepen.io/"</Link> 를 참고하여</p>
-          <p>새로운 디자인이나 다른사람들의 코드를 분석하고 이해하는 것을 좋아합니다.</p>
-          <p>개발자가 된다면, <span className={`about-info03-span ${scrollPosition >= 765 ? 'underline' : ''}`}>개인의 사이트가아닌</span> 정식으로 유저들에게</p>
-          <p><span className='about-info01-span02'>서비스</span>하는 것이 저의 첫 목표입니다.</p>
+
+        <div className='about-info02'>
+          <h2><span className={scrollPosition >= 158 ? 'about-title-scorll' : ''}>MY INFO</span></h2>
+          <div className='about-info02_box'>
+            <div className={scrollPosition >= 170 ? 'about-info02-p01-scroll' : 'about-info02-p01'}>
+              <MdPeopleAlt />
+              <div>
+                <p>이름</p>
+                <p>민덕기</p>
+              </div>
+            </div>
+            <div className={scrollPosition >= 170 ? 'about-info02-p02-scroll' : 'about-info02-p02'}>
+              <LiaBirthdayCakeSolid />
+              <div>
+                <p>태어난날</p>
+                <p>1997.09.23</p>
+              </div>
+            </div>
           </div>
-          <h2><span className={scrollPosition >= 820 ? 'about-info03-title-scorll' : ''}>끝내며...</span></h2>
-          <p>졸업 후 건설현장과 수도 정비 일을 했지만</p>
-          <p>무계획적이고 항상 위험을 동반했습니다.</p>
-          <p>더 늦기전에<span className='about-info01-span02'>프론트엔드 개발자</span>로</p>
-          <p>도전하게 됐습니다</p>
-          <p>현재는 부족하지만 <span className={`about-info03-span ${scrollPosition >= 820 ? 'underline' : ''}`}>포기하지않는 끈기로</span></p>
-          <p>성장하는 개발자가 되겠습니다.</p>
+          <div className='about-info02_box'>
+            <div className={scrollPosition >= 170 ? 'about-info02-p03-scroll' : 'about-info02-p03'}>
+              <IoCall />
+              <div>
+                <p>전화번호</p>
+                <p>010-8948-9709</p>
+              </div>
+            </div>
+            <div className={scrollPosition >= 170 ? 'about-info02-p04-scroll' : 'about-info02-p04'}>
+              <IoMdMail />
+              <div>
+                <p>이메일</p>
+                <p>alsejrrl9723@naver.com</p>
+              </div>
+            </div>
+          </div>
+          <div className='about-info02_box'>
+            <div className={scrollPosition >= 170 ? 'about-info02-p05-scroll' : 'about-info02-p05'}>
+              <FaGithub />
+              <div>
+                <p>깃 허브</p>
+                <Link to={'https://github.com/deokgeneral'} target='_blank'>깃 허브가기</Link>
+              </div>
+            </div>
+            <div className={scrollPosition >= 170 ? 'about-info02-p06-scroll' : 'about-info02-p06'}>
+              <FaSchoolFlag />
+              <div>
+                <p>학력</p>
+                <p>한신대학교</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='about-info03'>
+          <div className='about-info03-skill'>
+            <h2><span className={scrollPosition >= 800 ? 'about-title-scorll' : ''}>SKILLS</span></h2>
+            <div className='about-info03-skill-frontend'>
+              <h3>Frontend</h3>
+              <div className='about-info03-skill-frontend-imgbox'>
+                <img src='./icon/html.png' alt='html' />
+                <img src='./icon/html-css.png' alt='html-css' />
+                <img src='./icon/html-js.png' alt='html-js' />
+                <img src='./icon/react.png' alt='react' />
+                <img src='./icon/reactrouter_logo.png' alt='react' />
+                <img src='./icon/vite_logo.png' alt='react' />
+              </div>
+              </div>
+              <div className='about-info03-skill-backend'>
+                <h3>Backend</h3>
+                <div className='about-info03-skill-backend-imgbox'>
+                <img src='./icon/firebase.png' alt='html' />
+                <img src='./icon/axios.png' alt='html-css' />
+                <img src='./icon/node-js_icon.png' alt='html-js' />
+                </div>
+            </div>
+              <div className='about-info03-skill-versioncontrol'>
+                <h3>Version Control</h3>
+                <div className='about-info03-skill-versioncontrol-imgbox'>
+                <img src='./icon/github.png' alt='html' />
+                <img src='./icon/git-icon.png' alt='html-css' />
+                </div>
+              </div>
+          </div>
+
+          <div className='about-info03-02'>
+            {/* <h2><span className={scrollPosition >= 2250 ? 'about-title-scorll' : ''}>Goovley</span></h2>
+            <div className='speech-bubble-box speech-bubble-box-right'>  
+              <div className='speech-bubble'>
+                <p></p>
+                <p>s</p>
+                <p>s</p>
+                <p>s</p>
+              </div>
+            </div>    */}
+            <h2><span className={scrollPosition >= 2400 ? 'about-title-scorll' : ''}>FINALLY</span></h2>
+            <div className='speech-bubble-box speech-bubble-box-left'>  
+              <div className='speech-bubble'>
+                <p>이 웹사이트를 만들게 된 이유는</p>
+                <p>남들과 차별화된 사이트를 만들고 싶었기 때문입니다.</p>
+                <p>저는 창의적인 아이디어로 유저들의 니즈를 충족시키는</p>
+                <p>프론트엔드 개발자가 되기를 목표로 하고 있습니다.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
