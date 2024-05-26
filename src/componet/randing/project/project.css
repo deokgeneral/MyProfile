@@ -209,13 +209,17 @@
 }
 
 /*반응형*/
-@media (max-width: 1100px) {
+@media (max-width: 1700px) {
     .project-img-contanier{
-        display: flex;
-        flex-wrap: wrap;
-        overflow-y: auto;
-        height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 400px;
+    gap: 30px;
     }
+}
+
+@media (max-width: 1100px) {
     .project-img-contanier::-webkit-scrollbar {
         display: none;
     }
@@ -224,18 +228,21 @@
     }
     .project-img-box01-title,
     .project-img-box02-title,
-    .project-img-box03-title{
+    .project-img-box03-title,
+    .project-img-box04-title{
         font-size: 13px;
     }
     
     .project-img-box01-info,
     .project-img-box02-info,
-    .project-img-box03-info{
+    .project-img-box03-info,
+    .project-img-box04-info{
         font-size: 12px;
     }
     .project-img-box01,
     .project-img-box02,
-    .project-img-box03{
+    .project-img-box03,
+    .project-img-box04{
         margin: 20px 10px;
     }
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './about.css';
 //아이콘 임포트
+import { BiSolidPin } from "react-icons/bi";
 import { FaGithub, FaSchoolFlag } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
@@ -47,7 +48,7 @@ function About() {
       </div>
       <div className='about-info-content' ref={aboutInfoContentRef}>
         <div className='reason'>
-          <h2><span className={scrollPosition >= 0 ? 'about-title-scorll' : ''}>MY THINK ?</span></h2>
+          <h2><span className={scrollPosition >= 0 ? 'about-title-scorll' : ''}>MY THINK</span></h2>
           <p>제가 생각하는 옳은 프론트엔드 개발자의 모습은</p>
           <p>최신 트렌드와 기술을 빠르게 캐치하고</p>
           <p>유연한 생각과 색다른 아이디어로</p>
@@ -100,7 +101,7 @@ function About() {
               <FaSchoolFlag />
               <div>
                 <p>학력</p>
-                <p>한신대학교</p>
+                <p>한신대학교 - 컴퓨터공학부</p>
               </div>
             </div>
           </div>
@@ -115,7 +116,7 @@ function About() {
                 <img src='./icon/html.png' alt='html' />
                 <img src='./icon/html-css.png' alt='html-css' />
                 <img src='./icon/html-js.png' alt='html-js' />
-                <img src='./icon/react.png' alt='react' />
+                <img src='./icon/react.png' alt='react' id='react-icon'/>
                 <img src='./icon/reactrouter_logo.png' alt='react' />
                 <img src='./icon/vite_logo.png' alt='react' />
               </div>
@@ -138,23 +139,29 @@ function About() {
           </div>
 
           <div className='about-info03-02'>
-            {/* <h2><span className={scrollPosition >= 2250 ? 'about-title-scorll' : ''}>Goovley</span></h2>
-            <div className='speech-bubble-box speech-bubble-box-right'>  
+            <h2><span className={scrollPosition >= 2250 ? 'about-title-scorll' : ''}>인재상</span></h2>
+            <div className='typeoftalent-box'>  
+              <ul className='typeoftalent-ul'>
+                <li>창의적인 개발자</li>
+                <li>최신 트랜드의 민감한 개발자</li>
+              </ul>
+              <ul className='typeoftalent-ul'>
+                <li>협업의 중요성을 아는 개발자</li>
+                <li>의견을 수용할줄 아는 개발자</li>
+              </ul>
+            </div>   
+            <h2><span className={scrollPosition >= 2250 ? 'about-title-scorll' : ''}>FINALLY</span></h2>
+            <div className='speech-bubble-box'>  
               <div className='speech-bubble'>
-                <p></p>
-                <p>s</p>
-                <p>s</p>
-                <p>s</p>
+                <p><BiSolidPin /></p>
+                <p>해당 웹사이트를 만들면서 전광판을 주제로</p>
+                <p>네온 레이아웃 활용을 통해 다른 웹사이트와 차별성을 두었습니다.</p>
+                <p>개발자로서 도전정신과 창의력은 필수역량으로 생각하며</p>
+                <p>앞으로도 창의적인 아이디어로</p>
+                <p>유저들의 니즈를 퉁족시키는 개발자가 되겠습니다.</p>
               </div>
-            </div>    */}
-            <h2><span className={scrollPosition >= 2400 ? 'about-title-scorll' : ''}>FINALLY</span></h2>
-            <div className='speech-bubble-box speech-bubble-box-left'>  
-              <div className='speech-bubble'>
-                <p>이 웹사이트를 만들게 된 이유는</p>
-                <p>남들과 차별화된 사이트를 만들고 싶었기 때문입니다.</p>
-                <p>저는 창의적인 아이디어로 유저들의 니즈를 충족시키는</p>
-                <p>프론트엔드 개발자가 되기를 목표로 하고 있습니다.</p>
-              </div>
+            </div>
+            <div className='speech-bubble-svg'>
             </div>
           </div>
         </div>
